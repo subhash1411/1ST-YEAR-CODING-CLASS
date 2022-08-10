@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+	int num,x,y,rem,sum=0,count=1,temp;
+	printf("Enter any number:");
+	scanf("%d",&num);
+	temp=num;
+	printf(" enter finding element:");
+	scanf("%d",&x);
+	printf(" enter replacing element:");
+	scanf("%d",&y);
+	while(num>0)
+	{
+		rem=num%10;
+		if(rem==x)
+		{
+			rem=y;
+		}
+		sum=sum+(rem*count);
+		count*=10;
+		num/=10;
+	}
+	printf("After replacing: %d => %d",temp,sum);
+}
