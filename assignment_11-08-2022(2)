@@ -1,0 +1,20 @@
+/* C program to arrange the coins */
+#include<stdio.h>
+void main()
+{
+	int num,i=0;
+	printf("Enter a number:");
+	scanf("%d",&num);
+	while(num>=0)
+	{
+		i++;
+		num=num-i;
+	}
+	printf("%d",i-1);
+}
+------------------------------------
+OUTPUT:-
+      Enter a number:15
+      5
+      
+      link:-https://leetcode.com/problems/arranging-coins/submissions/
