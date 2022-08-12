@@ -1,0 +1,29 @@
+/* program to generate following pattern: taking n=5
+   A
+  B  C
+  D  E  F
+  G  H  I   J
+  K  L  M N O     */
+#include<stdio.h>
+void main()
+{
+	int n=5,i,j;
+	char c='A';
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("%c",c);
+			c=c+1;
+		}
+		printf("\n");
+	}
+}
+---------------------------------------------------
+OUTPUT:-
+       A
+       B  C
+       D  E  F
+       G  H  I  J
+       K  L  M  N O  
+        
