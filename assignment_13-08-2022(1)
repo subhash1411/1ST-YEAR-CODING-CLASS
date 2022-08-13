@@ -1,0 +1,29 @@
+/* C  program to read “n” value and print  pattern */
+#include<stdio.h>
+void main()
+{
+	int n,i,j;
+	char c='a',ch='A';
+  printf("Enter n value:");
+  scanf("%d\n",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("%c%c  ",ch,c);
+			c+=1;
+			ch+=1;	
+		}
+		printf("\n");
+	}
+}
+__________________________________________________________________
+OUTPUT:-
+      Enter n value:5
+                                         
+      Aa
+      Bb      Cc
+      Dd      Ee      Ff
+      Gg      Hh      Ii      Jj
+      Kk      Ll      Mm      Nn      Oo
+
