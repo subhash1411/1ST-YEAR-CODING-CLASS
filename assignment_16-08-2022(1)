@@ -3,6 +3,7 @@
 int main(void) 
 {
 	int a[4],count=0;
+	printf("Enter 4 integer values:");
 	for(int i=0;i<4;i++)
 	{
 	    scanf("%d",&a[i]);
@@ -12,10 +13,10 @@ int main(void)
 	    if(a[i]>=10)
 	    count++;
 	}
-	printf("%d",count);
+	printf("NO.of tasks more than 10 in a week : %d",count);
 	return 0;
 }
 _____________________________________
 OUTPUT:-
-        12 15 8 10
-        3
+       Enter 4 integer values: 12 15 8 10
+       NO.of tasks more than 10 in a week : 3
