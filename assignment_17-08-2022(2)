@@ -1,0 +1,26 @@
+/*  c program to generate finonacci series upto given number using arrays */
+#include<stdio.h>
+void main()
+{
+	int a[100],i,n,t=3;
+	a[0]=0;
+	a[1]=1;
+	printf("Enter ending number:");
+	scanf("%d",&n);
+	for(i=2;i<t;i++)
+	{
+		a[i] = a[i-1] + a[i-2];
+		if(a[i]<=n)
+			t++;
+		else
+			break;
+	}
+	printf("Fibnocci series number : ");
+	for(i=0;i<t-1;i++)
+	printf("%d  ",a[i]);
+}
+___________________________________
+OUTput:
+      Enter ending number:66
+      Fibnocci series number : 0  1  1  2  3  5  8  13  21  34  55
+--------------------------------
