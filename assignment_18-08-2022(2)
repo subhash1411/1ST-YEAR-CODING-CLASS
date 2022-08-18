@@ -1,0 +1,28 @@
+/* c program to find out sum of factorial values of all elements of array */
+#include<stdio.h>
+void main()
+{
+	int arr[100],i,sum=0,n,f;
+	printf("Enter size of array:");
+	scanf("%d",&n);
+	printf("Enter array elements:");
+	for(i=0;i<n;i++)
+	scanf("%d",&arr[i]);
+	for(i=0;i<n;i++)
+	{
+		f=1;
+		while(arr[i]>0)
+		{
+			f=f*arr[i];
+			arr[i]--;
+		}
+		sum+=f;
+	}
+	printf("Sum of factorial of all elements : %d",sum);
+}
+_____________________________________________________________________________
+OUTPUT:-
+
+Enter size of array: 5
+Enter array elements: 1 2 3 4 5
+Sum of factorial of all elements : 153
