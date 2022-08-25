@@ -1,0 +1,21 @@
+/* a program to count no.of words in a string */
+#include<stdio.h>
+void main()
+{
+	char str[1000];
+	int count=0,i;
+	printf("Enter any string:");
+	scanf("%[^\n]s",str);
+	for(i=0;str[i] != '\0';i++);
+	int a=i;
+	for(i=0;i<=a;i++)
+	{
+		if(str[i] == ' ' && str[i+1] != ' ')
+			count++;
+	}
+	printf(" NO. OF WORDS IN STRING : %d",count);
+}
+-----------------------------------------------
+OUTPUT:-
+Enter any string:I LOVE INDIA
+ NO. OF WORDS IN STRING : 3
