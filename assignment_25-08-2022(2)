@@ -1,0 +1,38 @@
+/* to read a  string and convert alternative character upper or lower  */
+#include<stdio.h>
+void main()
+{
+	char str[100];
+	int i;
+	printf("ENTER A NAME/ WORD:");
+	scanf("%[^\n]s",str);
+	for(i=0;str[i] != '\0';i++);
+	int a=i;
+	for(i=0;i<=a;i++)
+	{
+		if(i%2 ==1)
+		{
+			if(str[i] == ' ')
+				str[i]=' ';
+			else if(str[i]>=65 && str[i]<=90)
+				str[i]=str[i]+32;
+			else
+				str[i]=str[i];
+		}
+		else
+		{
+			if(str[i] == ' ')
+				str[i]=' ';
+			else if(str[i]>=65 && str[i]<=90)
+				str[i]=str[i];
+			else
+				str[i]=str[i]-32;
+		}
+	}
+	printf("CONVERT ALTERNATIVE CHARACTER : %s",str);
+}
+----------------------------------------------------------
+OUTPUT:-
+ENTER A NAME/ WORD:WELCOME TO PROGRAMING
+
+CONVERT ALTERNATIVE CHARACTER : WeLcOmE To pRoGrAmInG
