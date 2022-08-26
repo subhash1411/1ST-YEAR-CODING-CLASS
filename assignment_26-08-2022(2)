@@ -1,0 +1,28 @@
+/* Program to print given string is palindrome or not without using string2 & without using string functions */
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char str[100];
+	int i=0,count=0;
+	puts("Enter a name:");
+	gets(str);
+	int j,n=strlen(str);
+	j=n-1;
+	while(i<(n/2))
+	{
+		if(str[i]==str[j]) 
+			count++;
+		j--;
+		i++;
+	}
+	if(count == n/2)
+		printf("PALINDROME");
+	else
+		printf("NOT PALINDROME");
+}
+--------------------------------------------------
+OUTPUT:-
+Enter a name:
+MADAM
+PALINDROME
