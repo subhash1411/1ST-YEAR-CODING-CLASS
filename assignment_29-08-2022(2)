@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char str[1000],c='0';
+      int i,t,count,n;    
+    scanf("%s",str);
+    n=strlen(str);
+     for(i=0;i<10;i++)
+     {
+         count=0;
+         for(t=0;t<n;t++)
+         {
+             if(str[t]==c)
+             {
+                 count++;
+             }
+         }
+         printf("%d ",count);
+         c++;
+     }  
+    return 0;
+}
