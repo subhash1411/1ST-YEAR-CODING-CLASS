@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char str[100];
+	puts("Enter a string:");
+	gets(str);
+	int i;
+	for(i=0;str[i] != '\0';i++)
+	{
+		if(str[i] == 'a')
+			str[i]='A';
+	}
+	puts(str);
+}
